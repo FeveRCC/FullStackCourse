@@ -14,6 +14,6 @@ sequenceDiagram
     Client ->> Server : HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
     Client --> Server : main.css
     Client ->> Server : HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
-    Client --> Server : main.js
+    Client -->> Server : main.js
     
 ```
