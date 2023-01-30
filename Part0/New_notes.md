@@ -10,10 +10,10 @@ sequenceDiagram
     Server --> Client : HTTP Status code 302
     Note over Client : Browser reload the page
     Client ->> Server : HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
-    Client <<-- Server : HTML Code
+    Server -->> Client  : HTML Code
     Client ->> Server : HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
-    Client <<-- Server : main.css
+    Server -->> Client : main.css
     Client ->> Server : HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
-    Client <<-- Server : main.js
+    Server -->> Client : main.js
     
 ```
